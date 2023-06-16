@@ -1,0 +1,545 @@
+{
+    "nodes": [
+        {
+            "width": 384,
+            "height": 265,
+            "id": "dndnode_51e90506-4403-41a6-92f1-370ffdc9a685",
+            "type": "genericNode",
+            "position": {
+                "x": 702.861345230128,
+                "y": 581.5237075404436
+            },
+            "data": {
+                "type": "PromptTemplate",
+                "node": {
+                    "template": {
+                        "input_variables": {
+                            "required": true,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "input_variables",
+                            "advanced": false,
+                            "type": "str",
+                            "list": true
+                        },
+                        "output_parser": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "output_parser",
+                            "advanced": false,
+                            "type": "BaseOutputParser",
+                            "list": false
+                        },
+                        "partial_variables": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "partial_variables",
+                            "advanced": false,
+                            "type": "code",
+                            "list": false
+                        },
+                        "template": {
+                            "required": true,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": true,
+                            "password": false,
+                            "name": "template",
+                            "advanced": false,
+                            "type": "prompt",
+                            "list": false
+                        },
+                        "template_format": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": "f-string",
+                            "password": false,
+                            "name": "template_format",
+                            "advanced": false,
+                            "type": "str",
+                            "list": false
+                        },
+                        "validate_template": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": true,
+                            "password": false,
+                            "name": "validate_template",
+                            "advanced": false,
+                            "type": "bool",
+                            "list": false
+                        },
+                        "_type": "PromptTemplate"
+                    },
+                    "description": "Schema to represent a prompt for an LLM.",
+                    "base_classes": [
+                        "StringPromptTemplate",
+                        "BasePromptTemplate",
+                        "PromptTemplate"
+                    ]
+                },
+                "id": "dndnode_51e90506-4403-41a6-92f1-370ffdc9a685",
+                "value": null
+            },
+            "selected": false,
+            "dragging": false,
+            "positionAbsolute": {
+                "x": 702.861345230128,
+                "y": 581.5237075404436
+            }
+        },
+        {
+            "width": 384,
+            "height": 597,
+            "id": "dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57",
+            "type": "genericNode",
+            "position": {
+                "x": 702.861345230128,
+                "y": 883.0581438876196
+            },
+            "data": {
+                "type": "OpenAI",
+                "node": {
+                    "template": {
+                        "cache": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "cache",
+                            "advanced": false,
+                            "type": "bool",
+                            "list": false
+                        },
+                        "verbose": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "verbose",
+                            "advanced": false,
+                            "type": "bool",
+                            "list": false
+                        },
+                        "callbacks": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "callbacks",
+                            "advanced": false,
+                            "type": "langchain.callbacks.base.BaseCallbackHandler",
+                            "list": true
+                        },
+                        "client": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "client",
+                            "advanced": false,
+                            "type": "Any",
+                            "list": false
+                        },
+                        "model_name": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": "text-davinci-003",
+                            "password": false,
+                            "options": [
+                                "text-davinci-003",
+                                "text-davinci-002",
+                                "text-curie-001",
+                                "text-babbage-001",
+                                "text-ada-001"
+                            ],
+                            "name": "model_name",
+                            "advanced": false,
+                            "type": "str",
+                            "list": true
+                        },
+                        "temperature": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": 0.7,
+                            "password": false,
+                            "name": "temperature",
+                            "advanced": false,
+                            "type": "float",
+                            "list": false
+                        },
+                        "max_tokens": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": 256,
+                            "password": true,
+                            "name": "max_tokens",
+                            "advanced": false,
+                            "type": "int",
+                            "list": false
+                        },
+                        "top_p": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 1,
+                            "password": false,
+                            "name": "top_p",
+                            "advanced": false,
+                            "type": "float",
+                            "list": false
+                        },
+                        "frequency_penalty": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 0,
+                            "password": false,
+                            "name": "frequency_penalty",
+                            "advanced": false,
+                            "type": "float",
+                            "list": false
+                        },
+                        "presence_penalty": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 0,
+                            "password": false,
+                            "name": "presence_penalty",
+                            "advanced": false,
+                            "type": "float",
+                            "list": false
+                        },
+                        "n": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 1,
+                            "password": false,
+                            "name": "n",
+                            "advanced": false,
+                            "type": "int",
+                            "list": false
+                        },
+                        "best_of": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 1,
+                            "password": false,
+                            "name": "best_of",
+                            "advanced": false,
+                            "type": "int",
+                            "list": false
+                        },
+                        "model_kwargs": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "password": false,
+                            "name": "model_kwargs",
+                            "advanced": true,
+                            "type": "code",
+                            "list": false
+                        },
+                        "openai_api_key": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": "",
+                            "password": true,
+                            "name": "openai_api_key",
+                            "display_name": "OpenAI API Key",
+                            "advanced": false,
+                            "type": "str",
+                            "list": false
+                        },
+                        "openai_api_base": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "password": true,
+                            "name": "openai_api_base",
+                            "advanced": false,
+                            "type": "str",
+                            "list": false
+                        },
+                        "openai_organization": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "openai_organization",
+                            "advanced": false,
+                            "type": "str",
+                            "list": false
+                        },
+                        "batch_size": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 20,
+                            "password": false,
+                            "name": "batch_size",
+                            "advanced": false,
+                            "type": "int",
+                            "list": false
+                        },
+                        "request_timeout": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "request_timeout",
+                            "advanced": false,
+                            "type": "float",
+                            "list": false
+                        },
+                        "logit_bias": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "logit_bias",
+                            "advanced": false,
+                            "type": "code",
+                            "list": false
+                        },
+                        "max_retries": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": 6,
+                            "password": false,
+                            "name": "max_retries",
+                            "advanced": false,
+                            "type": "int",
+                            "list": false
+                        },
+                        "streaming": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": false,
+                            "password": false,
+                            "name": "streaming",
+                            "advanced": false,
+                            "type": "bool",
+                            "list": false
+                        },
+                        "allowed_special": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": [],
+                            "password": false,
+                            "name": "allowed_special",
+                            "advanced": false,
+                            "type": "Literal'all'",
+                            "list": true
+                        },
+                        "disallowed_special": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "value": "all",
+                            "password": false,
+                            "name": "disallowed_special",
+                            "advanced": false,
+                            "type": "Literal'all'",
+                            "list": false
+                        },
+                        "_type": "OpenAI"
+                    },
+                    "description": "Wrapper around OpenAI large language models.",
+                    "base_classes": [
+                        "BaseLanguageModel",
+                        "BaseLLM",
+                        "OpenAI",
+                        "BaseOpenAI"
+                    ]
+                },
+                "id": "dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57",
+                "value": null
+            },
+            "selected": false,
+            "positionAbsolute": {
+                "x": 702.861345230128,
+                "y": 883.0581438876196
+            },
+            "dragging": false
+        },
+        {
+            "width": 384,
+            "height": 307,
+            "id": "dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "type": "genericNode",
+            "position": {
+                "x": 1424.6760800258012,
+                "y": 807.0074232159867
+            },
+            "data": {
+                "type": "LLMChain",
+                "node": {
+                    "template": {
+                        "memory": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "password": false,
+                            "name": "memory",
+                            "advanced": false,
+                            "type": "BaseMemory",
+                            "list": false
+                        },
+                        "callbacks": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": false,
+                            "multiline": false,
+                            "password": false,
+                            "name": "callbacks",
+                            "advanced": false,
+                            "type": "langchain.callbacks.base.BaseCallbackHandler",
+                            "list": true
+                        },
+                        "verbose": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": false,
+                            "password": false,
+                            "name": "verbose",
+                            "advanced": true,
+                            "type": "bool",
+                            "list": false
+                        },
+                        "prompt": {
+                            "required": false,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "password": false,
+                            "name": "prompt",
+                            "advanced": false,
+                            "type": "BasePromptTemplate",
+                            "list": false
+                        },
+                        "llm": {
+                            "required": true,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "password": false,
+                            "name": "llm",
+                            "advanced": false,
+                            "type": "BaseLanguageModel",
+                            "list": false
+                        },
+                        "output_key": {
+                            "required": true,
+                            "placeholder": "",
+                            "show": true,
+                            "multiline": false,
+                            "value": "text",
+                            "password": false,
+                            "name": "output_key",
+                            "advanced": true,
+                            "type": "str",
+                            "list": false
+                        },
+                        "_type": "LLMChain"
+                    },
+                    "description": "Chain to run queries against LLMs.",
+                    "base_classes": [
+                        "LLMChain",
+                        "Chain",
+                        "function"
+                    ]
+                },
+                "id": "dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+                "value": null
+            },
+            "selected": false,
+            "positionAbsolute": {
+                "x": 1424.6760800258012,
+                "y": 807.0074232159867
+            },
+            "dragging": false
+        }
+    ],
+    "edges": [
+        {
+            "source": "dndnode_51e90506-4403-41a6-92f1-370ffdc9a685",
+            "sourceHandle": "PromptTemplate|dndnode_51e90506-4403-41a6-92f1-370ffdc9a685|StringPromptTemplate|BasePromptTemplate|PromptTemplate",
+            "target": "dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "targetHandle": "BasePromptTemplate|prompt|dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "style": {
+                "stroke": "#222222"
+            },
+            "className": "animate-pulse",
+            "animated": false,
+            "id": "reactflow__edge-dndnode_51e90506-4403-41a6-92f1-370ffdc9a685PromptTemplate|dndnode_51e90506-4403-41a6-92f1-370ffdc9a685|StringPromptTemplate|BasePromptTemplate|PromptTemplate-dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0dBasePromptTemplate|prompt|dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "selected": false
+        },
+        {
+            "source": "dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57",
+            "sourceHandle": "OpenAI|dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57|BaseLanguageModel|BaseLLM|OpenAI|BaseOpenAI",
+            "target": "dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "targetHandle": "BaseLanguageModel|llm|dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "style": {
+                "stroke": "#222222"
+            },
+            "className": "animate-pulse",
+            "animated": false,
+            "id": "reactflow__edge-dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57OpenAI|dndnode_326060f1-d3ca-4e30-9895-ea7c1cb4df57|BaseLanguageModel|BaseLLM|OpenAI|BaseOpenAI-dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0dBaseLanguageModel|llm|dndnode_134dc9d3-729d-4b34-875d-c3e53c545a0d",
+            "selected": false
+        }
+    ],
+    "viewport": {
+        "x": -359.79443829466504,
+        "y": -425.8519030072675,
+        "zoom": 0.7494998008777739
+    }
+}
